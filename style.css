@@ -1,0 +1,283 @@
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+body{margin: 0px}h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}h1,h2,h3,h4,h5,h6,strong,dt{font-weight:bold}optgroup{font-weight:normal}abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}del{text-decoration:line-through}blockquote,ul,ol,dl{margin:1em}ol,ul,dl{margin-left:2em}ol{list-style:decimal outside}ul{list-style:disc outside}dl dd{margin-left:1em}th,td{border:1px solid #000;padding:.5em}th{font-weight:bold;text-align:center}caption{margin-bottom:.5em;text-align:center}sup{vertical-align:super}sub{vertical-align:sub}p,fieldset,table,pre{margin-bottom:1em}button,input[type="checkbox"],input[type="radio"],input[type="reset"],input[type="submit"]{padding:1px}img{-ms-interpolation-mode:bicubic}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 13px;
+  line-height: 100%;
+}
+
+
+/* Form styles */
+
+header {
+  background-color: #2962ff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+input {
+  font-size: 16px;
+}
+
+#url {
+  border: 3px solid #fff;
+  color: #555;
+  min-width: 512px;
+  padding: 0 4px;
+}
+
+#go {
+  margin: 0;
+}
+
+
+/* Footer styles */
+
+footer {
+  background-color: #43a047;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/* Devices styles */
+
+#devices {
+  text-align: center;
+}
+
+article {
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin: 25px 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.device {
+  margin: 0 auto;
+  padding-bottom: 44px;
+  padding-left: 16px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.flashingTop {
+  height: 20px;
+  left: 0;
+  padding-top: 4px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+article iframe {
+  border: 1px solid #d1d1d1;
+  height: 100%;
+  margin: 0;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+span.time {
+  color: #fff;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+}
+
+article p {
+  color: #777;
+  display: inline;
+  font-size: 11px;
+  left: 50%;
+  margin: 0 0 0 -128px;
+  min-width: 256px;
+  position: absolute;
+  top: 1px;
+}
+
+
+/* iPhone 5 portrait  */
+
+.iphone-5-portrait {
+  background-image: url(images/iphone-5-portrait.png);
+  padding: 103px 0;
+}
+
+.iphone-5-portrait .device {
+  width: 337px;
+  height: 504px;
+}
+
+
+/* iPhone 5 landscape  */
+
+.iphone-5-landscape {
+  background-image: url(images/iphone-5-landscape.png);
+  padding: 22px 0;
+}
+
+.iphone-5-landscape .device {
+  width: 585px;
+  height: 256px;
+}
+
+
+/* iPhone 6 portrait */
+
+.iphone-6-portrait {
+  background-image: url(images/iphone-6-portrait.png);
+  padding: 103px 0;
+}
+
+.iphone-6-portrait .device {
+  width: 392px;
+  height: 603px;
+}
+
+
+/* iPhone 6 landscape */
+
+.iphone-6-landscape {
+  background-image: url(images/iphone-6-landscape.png);
+  padding: 22px 0;
+}
+
+.iphone-6-landscape .device {
+  width: 684px;
+  height: 311px;
+}
+
+
+/* iPhone 6+ portrait  */
+
+.iphone-6-plus-portrait {
+  background-image: url(images/iphone-6-plus-portrait.png);
+  padding: 103px 0;
+}
+
+.iphone-6-plus-portrait .device {
+  width: 431px;
+  height: 672px;
+}
+
+
+/* iPhone 6+ landscape */
+
+.iphone-6-plus-landscape {
+  background-image: url(images/iphone-6-plus-landscape.png);
+  padding: 22px 0;
+}
+
+.iphone-6-plus-landscape .device {
+  width: 753px;
+  height: 350px;
+}
+
+
+/* Nexus 4 portrait */
+
+.nexus-4-portrait {
+  background-image: url(images/nexus-4-portrait.png);
+  padding: 68px 0 146px 0;
+}
+
+.nexus-4-portrait .device {
+  width: 401px;
+  height: 600px;
+  padding-bottom: 0;
+}
+
+
+/* Nexus 4 landscape */
+
+.nexus-4-landscape {
+  background-image: url(images/nexus-4-landscape.png);
+  padding: 22px 0;
+}
+
+.nexus-4-landscape .device {
+  width: 617px;
+  height: 364px;
+  padding-bottom: 0;
+}
+
+
+/* iPad portrait */
+
+.ipad-portrait {
+  background-image: url(images/ipad-portrait.png);
+  padding: 111px 0;
+}
+
+.ipad-portrait .device {
+  width: 785px;
+  height: 929px;
+  padding-top: 95px;
+  padding-bottom: 0;
+  padding-left: 16px;
+}
+
+.ipad-portrait span.time {
+  color: #bbb;
+}
+
+
+/* iPad landscape */
+
+.ipad-landscape {
+  background-image: url(images/ipad-landscape.png);
+  padding: 101px 0;
+}
+
+.ipad-landscape .device {
+  width: 1041px;
+  height: 675px;
+  padding-top: 93px;
+  padding-bottom: 0;
+  padding-left: 16px;
+}
+
+.ipad-landscape span.time {
+  color: #bbb;
+}
+
+.macbook-15 {
+  /*background-image: url(images/macbook-15-v1.png);*/
+  padding: 101px 0;
+}
+
+.macbook-15 .device {
+  width: 1680px;
+  height: 1050px;
+  padding-top: 93px;
+  padding-bottom: 0;
+  padding-left: 16px;
+}
+
+.macbook-15 span.time {
+  color: #bbb;
+}
+
+
+
