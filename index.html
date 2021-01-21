@@ -20,114 +20,124 @@
 </header>
 
 <section id="devices">
-
-    <article class="iphone-5-portrait">
+    <button onclick="setIframe('iphone-5-portrait-')">show iphone-5-portrait</button>
+     <article id="iphone-5-portrait-article" class="iphone-5-portrait"   >
         <p>iPhone 5 portrait · width: 320px</p>
         <div class="device">
             <div class="flashingTop">
                 <span class="time">10:29 AM</span>
             </div>
-            <iframe src=""></iframe>
+             <iframe id="iphone-5-portrait-iframe" src=""></iframe>
         </div>
     </article>
 
-    <article class="iphone-5-landscape">
+    <button onclick="setIframe('iphone-5-landscape-')">show iphone-5-portrait</button>
+    <article id="iphone-5-landscape-article" class="iphone-5-landscape">
         <p>iPhone 5 landscape · width: 568px</p>
         <div class="device">
             <div class="flashingTop">
                 <span class="time">10:29 AM</span>
             </div>
-            <iframe src=""></iframe>
+            <iframe id="iphone-5-landscape-iframe" src=""></iframe>
         </div>
     </article>
 
-    <article class="iphone-6-portrait">
+    <button onclick="setIframe('iphone-6-portrait-')">show iphone-6-portrait</button>
+    <article id="iphone-6-portrait-article" class="iphone-6-portrait" >
         <p>iPhone 6 portrait · width: 375px</p>
         <div class="device">
             <div class="flashingTop">
                 <span class="time">10:29 AM</span>
             </div>
-            <iframe src=""></iframe>
+            <iframe id="iphone-6-portrait-iframe" src=""></iframe>
         </div>
     </article>
 
-    <article class="iphone-6-landscape">
+    <button onclick="setIframe('iphone-6-landscape-')">show iphone-6-landscape</button>
+    <article id="iphone-6-landscape-article" class="iphone-6-landscape" >
         <p>iPhone 6 landscape · width: 667px</p>
         <div class="device">
             <div class="flashingTop">
                 <span class="time">10:29 AM</span>
             </div>
-            <iframe src=""></iframe>
+            <iframe id="iphone-6-landscape-iframe" src=""></iframe>
         </div>
     </article>
 
-    <article class="iphone-6-plus-portrait">
-        <p>iPhone 6+ portrait · width: 414px</p>
+    <button onclick="setIframe('iphone-6-plus-portrait-')">show iphone-6-plus-portrait</button>
+    <article id="iphone-6-plus-portrait-article" class="iphone-6-plus-portrait" >
+         <p>iPhone 6+ portrait · width: 414px</p>
         <div class="device">
             <div class="flashingTop">
                 <span class="time">10:29 AM</span>
             </div>
-            <iframe src=""></iframe>
+            <iframe id="iphone-6-plus-portrait-iframe" src=""></iframe>
         </div>
     </article>
 
-    <article class="iphone-6-plus-landscape">
+    <button onclick="setIframe('iphone-6-plus-landscape-')">show iphone-6-plus-landscape</button>
+    <article id="iphone-6-plus-landscape-article" class="iphone-6-plus-landscape"  >
         <p>iPhone 6+ landscape · width: 736px</p>
         <div class="device">
             <div class="flashingTop">
                 <span class="time">10:29 AM</span>
             </div>
-            <iframe src=""></iframe>
+            <iframe id="iphone-6-plus-landscape-iframe" src=""></iframe>
         </div>
     </article>
 
-    <article class="nexus-4-portrait">
+    <button onclick="setIframe('nexus-4-portrait-')">show nexus-4-portrait</button>
+    <article id="nexus-4-portrait-article" class="nexus-4-portrait">
         <p>Nexus 4 portrait · width: 384px</p>
         <div class="device">
             <div class="flashingTop">
                 <span class="time">10:29 AM</span>
             </div>
-            <iframe src=""></iframe>
+            <iframe id="nexus-4-portrait-iframe" src=""></iframe>
         </div>
     </article>
 
-    <article class="nexus-4-landscape">
+    <button onclick="setIframe('nexus-4-landscape-')">show nexus-4-landscape</button>
+    <article id="nexus-4-landscape-article" class="nexus-4-landscape" >
         <p>Nexus 4 landscape · width: 600px</p>
         <div class="device">
             <div class="flashingTop">
                 <span class="time">10:29 AM</span>
             </div>
-            <iframe src=""></iframe>
+            <iframe id="nexus-4-landscape-iframe" src=""></iframe>
         </div>
     </article>
 
-    <article class="ipad-portrait">
+    <button onclick="setIframe('ipad-portrait-')">show ipad-portrait</button>
+    <article id="ipad-portrait-article" class="ipad-portrait" >
         <p>iPad portrait · width: 768px</p>
         <div class="device">
             <div class="flashingTop">
                 <span class="time">10:29 AM</span>
             </div>
-            <iframe src=""></iframe>
+            <iframe id="ipad-portrait-iframe" src=""></iframe>
         </div>
     </article>
 
-    <article class="ipad-landscape">
+    <button onclick="setIframe('ipad-landscape-')">show ipad-landscape</button>
+    <article id="ipad-landscape-article" class="ipad-landscape"  >
         <p>iPad landscape · width: 1024px</p>
         <div class="device">
             <div class="flashingTop">
                 <span class="time">10:29 AM</span>
             </div>
-            <iframe src=""></iframe>
+            <iframe  id="ipad-landscape-iframe"  src=""></iframe>
         </div>
     </article>
 
-    <article class="macbook-15">
+    <button onclick="setIframe('macbook-15-')">show macbook-15</button>
+    <article id="macbook-15-article" class="macbook-15" >
         <p>Apple MacBook Pro 15-inch (Hi-Res screen)</p>
         <div class="device">
             <div class="flashingTop">
                 <span class="time">10:29 AM</span>
             </div>
-            <iframe src=""></iframe>
+            <iframe id="macbook-15-iframe" src=""></iframe>
         </div>
     </article>
 
@@ -137,24 +147,9 @@
 
 </footer>
 
+<script src="js/app/main.js"></script>
 <script>
-    var hash = window.location.hash
-        , url = document.getElementById("url")
-        , go = document.getElementById("go")
-        , form = document.forms[0]
-        , iframes = document.querySelectorAll("iframe");
-    if (hash) url.value = hash.substr(1);
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var src = url.value.trim();
-        window.location.hash = "#" + src;
-        if (src.search(/\\/i) !== -1)
-            src = ("file:///" + src).replace(/\\/gi, "/");
-        [].forEach.call(iframes, function (iframe) {
-            iframe.src = src;
-        });
-    });
-    go.click();
+
 </script>
 
 </body>
