@@ -1,5 +1,8 @@
 # NOT The Real Responsinator
 
-Une version locale de [Responsinator](https://www.responsinator.com/) pour tester
-facilement les pages HTML locales.
+The original version [Responsinator](https://www.responsinator.com/) 
+
+This version was been modified to have more iframes and close and hide de iframes.
+
+The version is in progress, and isn´t finish
 
